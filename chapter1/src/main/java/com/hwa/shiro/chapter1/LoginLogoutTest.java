@@ -33,10 +33,10 @@ public class LoginLogoutTest {
         try {
             //4.登陆，即身份验证
             subject.login(token);
-            System.out.println("验证成功");
+            System.out.println("验证成功!");
         } catch (AuthenticationException e) {
             //5.身份验证失败
-            System.out.println("验证失败");
+            System.out.println("验证失败!");
         }
 
         Assert.assertEquals(true,subject.isAuthenticated());//断言用户已经登录
